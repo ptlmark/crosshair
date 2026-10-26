@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "customcrosshair",
+  "version": "${version}",
+  "name": "Custom Crosshair",
+  "description": "A configurable crosshair that replaces the vanilla one. Standalone port of the Custom Crosshair module from Anubis Client. Press ` to open the settings.",
+  "authors": [
+    "Port of Anubis Client's Custom Crosshair (original author: 4ldenz)"
+  ],
+  "contact": {
+    "sources": "https://github.com/4ldenz/Anubis-client"
+  },
+  "license": "GPL-3.0-only",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.customcrosshair.CustomCrosshairMod"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "customcrosshair.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

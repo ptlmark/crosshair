@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.customcrosshair.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "MixinGui"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
